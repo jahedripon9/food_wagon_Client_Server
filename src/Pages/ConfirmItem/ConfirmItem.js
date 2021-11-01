@@ -5,7 +5,7 @@ const ConfirmItem = () => {
     const {itemId} = useParams();
     const [item, setItem] = useState({})
     useEffect(()=>{
-        fetch(`http://localhost:5000/fooditems/${itemId}`)
+        fetch(`https://gory-castle-51864.herokuapp.com/fooditems/${itemId}`)
         .then(res => res.json())
         .then(date => setItem(date))
     },[])

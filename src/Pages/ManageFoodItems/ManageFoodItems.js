@@ -5,13 +5,13 @@ const ManageFoodItems = () => {
 
     const [foods, setFoods] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:8000/fooditems')
+        fetch('https://gory-castle-51864.herokuapp.com/fooditems')
         .then(res => res.json())
         .then(data => setFoods(data))
     },[])
 
     const handleDelete = id =>{
-        const url = `http://localhost:8000/fooditems/${id}`;
+        const url = `https://gory-castle-51864.herokuapp.com/fooditems/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

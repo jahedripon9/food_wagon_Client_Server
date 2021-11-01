@@ -5,7 +5,7 @@ import PopularItems from '../PopularItems/PopularItems';
 const Product = ({product}) => {
     const [products, setProducts]= useState([])
     useEffect(()=>{
-        fetch('http://localhost:8000/fooditems')
+        fetch('https://gory-castle-51864.herokuapp.com/fooditems')
         .then(rse => rse.json())
         .then(data => setProducts(data));
     },[])
