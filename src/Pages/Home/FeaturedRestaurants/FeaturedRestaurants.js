@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const FeaturedRestaurants = () => {
     return (
-        <div>
+        <div className='bg-green-50 my-5'>
             <div className="container mx-auto">
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto ">

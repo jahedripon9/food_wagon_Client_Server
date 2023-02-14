@@ -1,6 +1,5 @@
 
 import './App.css';
-import Header from './Pages/Shared/Header/Header';
 import Login from './Pages/Login/Login/Login'
 import Home from './Pages/Home/Home/Home';
 import {
@@ -18,6 +17,7 @@ import Product from './Pages/Home/Product/Product';
 import ContactUs from './Pages/Home/ContactUs/ContactUs';
 import About from './Pages/Home/About/About';
 import  NotFound  from './Pages/NotFound/NotFound';
+import NavBar  from './Pages/Shared/Header/NavBar';
 
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
     <div className="App">
       <AuthProvider>
       <Router>
-      <Header></Header>
+          <NavBar />
         <Switch>
         <Route exact path='/'>
           <Home></Home>

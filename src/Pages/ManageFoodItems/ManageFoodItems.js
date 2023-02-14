@@ -5,13 +5,13 @@ const ManageFoodItems = () => {
 
     const [foods, setFoods] = useState([])
     useEffect(() => {
-        fetch('https://food-wagon-server.vercel.app/fooditems')
+        fetch('http://localhost:5000/fooditems')
             .then(res => res.json())
             .then(data => setFoods(data))
     }, [])
 
     const handleDelete = id => {
-        const url = `https://food-wagon-server.vercel.app/fooditems/${id}`;
+        const url = `http://localhost:5000/fooditems/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

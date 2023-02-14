@@ -8,7 +8,7 @@ const Servicead = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data)
-        axios.post('https://food-wagon-server.vercel.app/fooditems', data)
+        axios.post('http://localhost:5000/fooditems', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Successfully Food Items Ad')

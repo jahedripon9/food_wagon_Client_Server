@@ -6,15 +6,15 @@ const PopularItem = ({item}) => {
     const { _id, name, price, description, img } = item;
     return (
         <div>
-            <div className="container mx-auto">
+            <div className="container mx-auto ">
             <section className="text-gray-600 body-font">
-                <div className="container px-5 py-10 mx-auto">
-                    <div className="item flex flex-wrap-m-4">
-                    <div className="lg:w-full md:w-1/2 p-4 ">
+                <div className="container px-5 py-10 mx-auto ">
+                        <div className="item flex flex-wrap-m-4 justify-around ">
+                            <div className="lg:w-full md:w-1/2 p-4 ">
                         <a className="block relative h-48 rounded overflow-hidden">
                         <img alt="" className="object-cover object-center w-full h-full block" src={img} />
                         </a>
-                        <div className="mt-4">
+                        <div className="mt-4 ">
                         
                         <h2 className="text-gray-900 title-font text-lg font-bold">{name}</h2>
                         <span><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
