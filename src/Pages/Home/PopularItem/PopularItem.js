@@ -25,7 +25,7 @@ const PopularItem = ({item}) => {
                         
                         <p className="mt-1 font-bold text-red-500 text-2xl">${price}</p>
                         </div>
-                        <Link to={`/deliveryinfo/${_id}`}><button className="text-indigo-500 inline-flex items-center lg:font-bold md:mb-2 lg:mb-0 bg-yellow-400 p-2 rounded-3xl">Place Order
+                        <Link to={`/deliveryinfo/${_id}`}><button className="text-white inline-flex items-center lg:font-bold md:mb-2 lg:mb-0 bg-yellow-500 px-12 py-2 rounded-3xl">Place Order
                             <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M5 12h14"></path>
                             <path d="M12 5l7 7-7 7"></path>
