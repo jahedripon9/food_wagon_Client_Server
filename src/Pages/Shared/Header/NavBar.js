@@ -56,7 +56,7 @@ export default function Example() {
                                 </div>
                                 <a className=" hidden flex title-font font-sm items-center text-gray-900 mb-4 md:mb-0  sm:hidden lg:block">
 
-                                    <span className="ml-3 text-3xl font-bold text-yellow-300   "><span className='text-yellow-600 '>food</span> wagon</span>
+                                    <span className="ml-3 text-3xl font-bold text-yellow-300   "><span className='text-yellow-600 '>Food</span>Wagon</span>
                                 </a>
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex space-x-4">
