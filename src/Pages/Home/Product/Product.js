@@ -5,7 +5,7 @@ import PopularItems from '../PopularItems/PopularItems';
 const Product = ({ product }) => {
     const [products, setProducts] = useState([])
     useEffect(() => {
-        fetch('https://food-wagon-server-jahedripon9.vercel.app/fooditems')
+        fetch('https://food-wagon-server.vercel.app/fooditems')
             .then(rse => rse.json())
             .then(data => setProducts(data));
     }, [])

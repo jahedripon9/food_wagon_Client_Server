@@ -5,7 +5,7 @@ const ConfirmItem = () => {
     const { itemId } = useParams();
     const [item, setItem] = useState({})
     useEffect(() => {
-        fetch(`https://food-wagon-server-jahedripon9.vercel.app/fooditems/${itemId}`)
+        fetch(`https://food-wagon-server.vercel.app/fooditems/${itemId}`)
             .then(res => res.json())
             .then(date => setItem(date))
     }, [])
