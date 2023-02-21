@@ -37,9 +37,9 @@ const ManageFoodItems = () => {
                         <div class="w-16 h-1 rounded-full bg-yellow-500 inline-flex"></div>
                     </div>
                 </div>
-                <div className='flex flex-wrap gap-5 '>
+                <div className='flex flex-wrap gap-5 mx-5'>
                     {
-                        foods.map(food => <div className='py-2 ' key={food._id}>
+                        foods.map(food => <div className='py-2 rounded-2xl' key={food._id}>
                             <img className='mx-auto w-72' src={food.img} alt="" />
                             <h3 className='text-2xl font-bold'>{food.name}</h3>
                             <h3 className='text-2xl font-bold'>${food.price}</h3>
