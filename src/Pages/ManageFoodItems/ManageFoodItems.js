@@ -29,22 +29,24 @@ const ManageFoodItems = () => {
 
     return (
         <div>
-            <div class="container mx-auto bg-blue-50">
-                <div class=" text-center mb-20 ">
+            <div class="container mx-auto  bg-blue-50">
+                <div class=" text-center py-20 ">
                     <h1 class="lg:text-5xl sm:text-3xl text-5xl font-bold title-font mb-4 text-yellow-600">Manage Food Items</h1>
 
-                    <div class="flex mt-6 justify-center">
+                    <div class="flex  my-6 justify-center">
                         <div class="w-16 h-1 rounded-full bg-yellow-500 inline-flex"></div>
                     </div>
                 </div>
-                {
-                    foods.map(food => <div className='py-2' key={food._id}>
-                        <img className='mx-auto' src={food.img} alt="" />
-                        <h3 className='text-2xl font-bold'>{food.name}</h3>
-                        <h3 className='text-2xl font-bold'>${food.price}</h3>
-                        <button className='font-bold px-5 py-2 bg-red-600 text-white rounded-full' onClick={() => handleDelete(food._id)}>Delete</button>
-                    </div>)
-                }
+                <div className='flex flex-wrap gap-5 '>
+                    {
+                        foods.map(food => <div className='py-2 ' key={food._id}>
+                            <img className='mx-auto w-72' src={food.img} alt="" />
+                            <h3 className='text-2xl font-bold'>{food.name}</h3>
+                            <h3 className='text-2xl font-bold'>${food.price}</h3>
+                            <button className='font-bold px-5 py-2 bg-red-600 text-white rounded-full' onClick={() => handleDelete(food._id)}>Delete</button>
+                        </div>)
+                    }
+                </div>
             </div>
         </div>
     );

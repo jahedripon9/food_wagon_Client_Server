@@ -45,7 +45,7 @@ function App() {
           <Route exact path='/popularitem'>
           <PopularItem></PopularItem>
           </Route>
-          <PrivateRoute exact path='/adfooditems'>
+          <PrivateRoute exact path='/adfooditems/'>
           <AdFoodItems></AdFoodItems>
           </PrivateRoute>
           <PrivateRoute exact path='/managefooditems'>
