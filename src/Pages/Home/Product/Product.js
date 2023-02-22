@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import PopularItem from '../PopularItem/PopularItem';
 import PopularItems from '../PopularItems/PopularItems';
 
 const Product = ({ product }) => {

@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Disclosure} from '@headlessui/react'
+import { Bars3Icon,  XMarkIcon } from '@heroicons/react/24/outline'
 import useAuth from '../../../hooks/useAuth'
 import { Link } from 'react-router-dom'
 
@@ -23,9 +23,9 @@ export default function Example() {
             {({ open }) => (
                 <>
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-                        
+
                         <div className="relative flex h-16 items-center justify-between">
-                            
+
                             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                                 {/* Mobile menu button*/}
                                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -36,28 +36,28 @@ export default function Example() {
                                         <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
                                     )}
                                 </Disclosure.Button>
-                                
+
                             </div>
                             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                                
-                                <div  className="flex flex-shrink-0 items-center">
-                                    <img 
+
+                                <div className="flex flex-shrink-0 items-center">
+                                    <Link to='/home'><img
                                         className="block h-8 w-auto lg:hidden"
                                         src="https://i.ibb.co/RYDYqS0/logo.png"
                                         alt="Your Company"
-                                    />
-                                    
-                                    <img
+                                    /></Link>
+
+                                    <Link to='/home'> <img
                                         className="hidden h-8 w-auto lg:block"
                                         src="https://i.ibb.co/RYDYqS0/logo.png"
                                         alt="Your Company"
-                                    />
-                                   
-                                </div>
-                                <a className=" hidden flex title-font font-sm items-center text-gray-900 mb-4 md:mb-0  sm:hidden lg:block">
+                                    /></Link>
 
-                                    <span className="ml-3 text-3xl font-bold text-yellow-300   "><span className='text-yellow-600 '>Food</span>Wagon</span>
-                                </a>
+                                </div>
+                                <Link className=" hidden flex title-font font-sm items-center text-gray-900 mb-4 md:mb-0  sm:hidden lg:block">
+
+                                    <Link to='/home'><span className="ml-3 text-3xl font-bold text-yellow-300   "><span className='text-yellow-600 '>Food</span>Wagon</span></Link>
+                                </Link>
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => (
@@ -79,21 +79,21 @@ export default function Example() {
                                 </div>
                             </div>
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                                
+
 
                                 {/* Profile dropdown */}
                                 <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                                    
+
                                     {/* <Link to='/adfooditems' className="mr-3 ml-auto inline-flex  font-bold text-black bg-yellow-50 border-0 py-1 px-3 focus:outline-none hover:bg-yellow-200 hover:text-red-500 rounded text-md" >  Add Food Items</Link> 
                                     <Link to='/managefooditems' className="mr-3 ml-auto inline-flex  font-bold text-black bg-yellow-50 border-0 py-1 px-3 focus:outline-none hover:bg-yellow-200 hover:text-red-500 rounded text-md" > Manage Food Items </Link> */}
 
                                     {user?.email ?
-                                        <Link  to='/home' className="ml-auto inline-flex  font-bold text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-500 rounded text-md" > <span><img className='w-4 bg-white mr-2 my-1 rounded-md' src="https://i.ibb.co/w7HtJyq/google.png" alt="" /></span> Log Out </Link> :
+                                        <Link onClick={logOut} to='/home' className="ml-auto inline-flex  font-bold text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-500 rounded text-md" > <span><img className='w-4 bg-white mr-2 my-1 rounded-md' src="https://i.ibb.co/w7HtJyq/google.png" alt="" /></span> Log Out </Link> :
                                         <Link to='/login' className="ml-auto inline-flex  font-bold text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-500 rounded text-lg" ><span><img className='w-6 bg-white mr-2 my-1 rounded-md' src="https://i.ibb.co/w7HtJyq/google.png" alt="" /></span> Sign In </Link>}
                                     <button className="font-bold text-sm sm:text-lg text-indigo-700   pe-3 ml-3 ">  <a href="/login">{user?.displayName}</a>
                                     </button>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>

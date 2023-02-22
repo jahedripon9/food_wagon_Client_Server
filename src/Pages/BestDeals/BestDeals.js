@@ -6,8 +6,8 @@ const BestDeals = () => {
         <div>
             <div className="container mx-auto">
                 <section className="text-gray-600 body-font ">
-                    <div class="text-center mb-10 border-black">
-                        <h1 class="lg:text-5xl sm:text-3xl text-5xl font-bold title-font mb-4 text-yellow-600">Best Deals in this Weeks</h1>
+                    <div className="text-center mb-10 border-black">
+                        <h1 className="lg:text-5xl sm:text-3xl text-5xl font-bold title-font mb-4 text-yellow-600">Best Deals in this Weeks</h1>
 
                         <div className="flex mt-6 justify-center">
                             <div className="w-16 h-1 rounded-full bg-yellow-500 inline-flex"></div>
@@ -22,7 +22,7 @@ const BestDeals = () => {
                             <p className="mb-8 leading-relaxed">Enjoy the large size of sandwiches. Complete perfect slice of sandwiches.</p>
                             <div className="flex justify-center">
                                 <Link to='/product'><button className="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">Proceed to order
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8 ml-2" viewBox="0 0 24 24">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-8 h-8 ml-2" viewBox="0 0 24 24">
                                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                                     </svg>
                                 </button></Link>
@@ -37,7 +37,7 @@ const BestDeals = () => {
                             <p className="mb-8 leading-relaxed">Get the best fried chicken smeared with a lip smacking lemon chili flavor. Check out best deals for fried chicken.</p>
                             <div className="flex justify-center">
                                 <Link to='/product'><button className="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">Proceed to order
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8 ml-2" viewBox="0 0 24 24">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-8 h-8 ml-2" viewBox="0 0 24 24">
                                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                                     </svg>
                                 </button></Link>
@@ -57,7 +57,7 @@ const BestDeals = () => {
                             <p className="mb-8 leading-relaxed">Pair up with a friend and enjoy the hot and crispy pizza pops. Try it with the best deals.</p>
                             <div className="flex justify-center">
                                 <Link to='/product'><button className="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">Proceed to order
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8 ml-2" viewBox="0 0 24 24">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-8 h-8 ml-2" viewBox="0 0 24 24">
                                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                                     </svg>
                                 </button></Link>

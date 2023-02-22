@@ -29,12 +29,12 @@ const ManageFoodItems = () => {
 
     return (
         <div>
-            <div class="container mx-auto  bg-blue-50">
-                <div class=" text-center py-20 ">
-                    <h1 class="lg:text-5xl sm:text-3xl text-5xl font-bold title-font mb-4 text-yellow-600">Manage Food Items</h1>
+            <div className="container mx-auto  bg-blue-50">
+                <div className=" text-center py-20 ">
+                    <h1 className="lg:text-5xl sm:text-3xl text-5xl font-bold title-font mb-4 text-yellow-600">Manage Food Items</h1>
 
-                    <div class="flex  my-6 justify-center">
-                        <div class="w-16 h-1 rounded-full bg-yellow-500 inline-flex"></div>
+                    <div className="flex  my-6 justify-center">
+                        <div className="w-16 h-1 rounded-full bg-yellow-500 inline-flex"></div>
                     </div>
                 </div>
                 <div className='flex flex-wrap gap-5 mx-5'>

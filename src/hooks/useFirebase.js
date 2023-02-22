@@ -29,7 +29,7 @@ const useFirebase = () => {
       }
     });
 
-  }, [])
+  }, [auth])
   return {
     user,
     signInUsingGoogle,
