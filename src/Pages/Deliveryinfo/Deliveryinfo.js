@@ -25,7 +25,7 @@ const Deliveryinfo = () => {
                     {errors.exampleRequired && <span className="text-danger fw-bold text-center rounded-pill">This field is required</span>}
 
 
-                    <Link to='/login'><input className="px-4 py-1 bg-yellow-300 rounded-full" type="submit" /></Link>
+                    <Link to='/thankyou'><input className="px-4 py-1 bg-yellow-300 rounded-full" type="submit" /></Link>
                 </form>
             </div>
         </div>

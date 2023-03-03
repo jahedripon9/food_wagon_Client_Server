@@ -18,6 +18,8 @@ import ContactUs from './Pages/Home/ContactUs/ContactUs';
 import About from './Pages/Home/About/About';
 import NotFound from './Pages/NotFound/NotFound';
 import NavBar from './Pages/Shared/Header/NavBar';
+import Deshboard from './Pages/Deshboard/Deshboard';
+import Thankyou from './Pages/Thankyou';
 
 
 function App() {
@@ -39,6 +41,9 @@ function App() {
             <Route exact path='/about'>
               <About></About>
             </Route>
+            <Route exact path='/thankyou'>
+              <Thankyou></Thankyou>
+            </Route>
             <PrivateRoute exact path='/product'>
               <Product></Product>
             </PrivateRoute>
@@ -47,6 +52,9 @@ function App() {
             </Route>
             <PrivateRoute exact path='/adfooditems/'>
               <AdFoodItems></AdFoodItems>
+            </PrivateRoute>
+            <PrivateRoute exact path='/deshboard'>
+              <Deshboard></Deshboard>
             </PrivateRoute>
             <PrivateRoute exact path='/managefooditems'>
               <ManageFoodItems></ManageFoodItems>

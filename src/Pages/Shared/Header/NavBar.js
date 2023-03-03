@@ -8,6 +8,7 @@ const navigation = [
     { name: 'Home', href: '/', current: true },
     { name: 'About', href: '/about', current: false },
     { name: 'Product', href: '/product', current: false },
+    
     // { name: 'Add Food Items', href: '/adfooditems', current: false },
     // { name: 'Manage Food Items', href: '/managefooditems', current: false },
 ]
@@ -73,8 +74,8 @@ export default function Example() {
                                                 {item.name}
                                             </a>
                                         ))}
-                                        <Link to='/adfooditems' className="mt-1 mr-3 ml-auto inline-flex  font-bold text-black bg-yellow-50 border-0 py-1 px-3 focus:outline-none hover:bg-yellow-200 hover:text-red-500 rounded text-md" >  Add Food Items</Link>
-                                        <Link to='/managefooditems' className="mt-1 mr-3 ml-auto inline-flex  font-bold text-black bg-yellow-50 border-0 py-1 px-3 focus:outline-none hover:bg-yellow-200 hover:text-red-500 rounded text-md" > Manage Food Items </Link>
+                                        <Link to='/deshboard'><button className="mt-1 mr-3 ml-auto inline-flex  font-bold text-black bg-yellow-50 border-0 py-1 px-3 focus:outline-none hover:bg-yellow-200 hover:text-red-500 rounded text-md" >Deshboard</button></Link>
+                                        
                                     </div>
                                 </div>
                             </div>

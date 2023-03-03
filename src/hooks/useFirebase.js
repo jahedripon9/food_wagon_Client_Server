@@ -8,6 +8,8 @@ initializeAuth();
 const useFirebase = () => {
   const [user, setUser] = useState({});
   const auth = getAuth();
+  const [admin, setAdmin] = useState(false);
+
   
   const googleProvider = new GoogleAuthProvider();
   const signInUsingGoogle = () => {
@@ -15,7 +17,12 @@ const useFirebase = () => {
 
   }
 
-  
+  useEffect(() => {
+    fetch(`https://dji-server.vercel.app/users/${user.email}`)
+      .then(res => res.json())
+      .then(data => setAdmin(data.admin))
+  }, [user.email])
+
   const logOut = () => {
     signOut(auth)
       .then(() => {
@@ -33,7 +40,8 @@ const useFirebase = () => {
   return {
     user,
     signInUsingGoogle,
-    logOut
+    logOut,
+    admin
 
   }
 }
